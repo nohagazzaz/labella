@@ -1,0 +1,265 @@
+@media (min-width: 992px) {
+  padding-#{$start-direction}: 0;
+  padding-#{$end-direction}: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #444;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transform: rotate(0deg);
+  position: relative;
+  #{$end-direction}: 0;
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: transform 0.35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  #{$end-direction}: auto;
+  top: 23px;
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  #{$end-direction}: auto;
+  top: 23px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+
+.opposite-font-family {
+  font-family: $opposite-font-family, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-nav {
+  padding-#{$start-direction}: 0;
+  padding-#{$end-direction}: unset;
+}
+
+.margin-start {
+  margin-#{$start-direction}: auto !important;
+  .dropdown .dropdown-menu {
+    #{$start-direction}: unset;
+    #{$end-direction}: 0;
+  }
+}
+
+/*!
+ * Start Bootstrap - Resume v5.0.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: white;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: white;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    $start-direction: 0;
+    $end-direction: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+.cursor-link[_ngcontent-c8]:before {
+  background-color: white;
+}
+.card {
+  background-color: transparent;
+  border: 0px;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-bottom: 0px;
+}
+
+.card-body {
+  text-align: start;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.header-line {
+  width: fit-content;
+  border: 2px solid $primary;
+  color: $primary;
+  padding: 1rem 1.8rem 1rem 1.8rem;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-danger {
+  color: $danger !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.navbar {
+  box-shadow: unset;
+}
+
+/*
+This .scss loop will create "margin helpers" and "padding helpers" for use in your web projects.
+It will generate several classes such as:
+.m-a-10 which gives margin to all sides 10 pixels.
+.m-s-10 which gives margin-right when langage is arabic and margin-left when language is english 10 pixels.
+.m-r-10 which gives margin-right 10 pixels.
+.m-r-15 gives MARGIN to the RIGHT 15 pixels.
+.m-t-15 gives MARGIN to the TOP 15 pixels and so on.
+.p-a-10 which gives PADDING to all sides 10 pixels.
+.p-s-10 which gives padding-right when langage is arabic and padding-left when language is english 10 pixels.
+.p-b-5 gives PADDING to the BOTTOM of 5 pixels
+.p-l-40 gives PADDING to the LEFT of 40 pixels
+The first letter is "m" or "p" for MARGIN or PADDING
+Second letter is "a", "t", "b", "l", or "r" for ALL, TOP, BOTTOM, LEFT, or RIGHT
+Third letter is the number of spacing in pixels. Adjust the amounts generated by editing the $spaceamounts variable below.
+*/
+
+$spaceamounts: (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100);
+$sides: (
+  "a": "all",
+  "t": "top",
+  "b": "bottom",
+  "l": "left",
+  "r": "right",
+  "s": $start-direction,
+  "e": $end-direction
+);
+@each $space in $spaceamounts {
+  @each $prefix, $value in $sides {
+    $property: if($prefix== "a", "", -#{$value});
+    .m-#{$prefix}-#{$space} {
+      margin#{$property}: #{$space}px !important;
+    }
+    .p-#{$prefix}-#{$space} {
+      padding#{$property}: #{$space}px !important;
+    }
+  }
+}

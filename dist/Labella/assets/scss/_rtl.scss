@@ -1,0 +1,16 @@
+/*** RTL websites ***/
+
+$direction :rtl;
+$opposite-direction :ltr;
+$start-direction :right;
+$end-direction :left;
+$transform-direction :-1;
+$font-family: 'DroidKufi-Regular';
+$opposite-font-family: 'Helvetica';
+.rtl {
+    font-family: $font-family, serif;
+    font-weight: normal;
+    font-style: normal;
+    direction: $direction;
+    @import "main";
+}
