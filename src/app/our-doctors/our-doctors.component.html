@@ -1,0 +1,22 @@
+<div class="row justify-content-center padding">
+  <h4 class="mb-4 primary-header-line">
+    <i class="fas fa-square-full diamond"></i>
+    <span class="text-center" translate>doctors</span>
+    <i class="fas fa-square-full diamond"></i>
+  </h4>
+</div>
+<div class="gray-background z-depth-1">
+  <div class="py-5">
+    <div class="row justify-content-center">
+      <div *ngFor="let item of list" class="avatar col-md-3  doctor-container">
+        <img src="../../assets/img/ايقونة اطبائنا.svg" alt="avatar"
+          class="rounded-circle img-fluid white doctor-image">
+        <p translate>
+          {{ item}}
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>

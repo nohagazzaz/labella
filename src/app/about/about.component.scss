@@ -1,0 +1,72 @@
+@import "variables";
+
+.primary-background {
+}
+
+.primary-header-line {
+  width: fit-content;
+  border: 2px solid white;
+  color: black;
+  padding: 1rem 1.8rem 1rem 1.8rem;
+}
+
+.text-color-white {
+  color: black;
+}
+.diamond {
+  transform: rotate(45deg);
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  overflow: hidden;
+}
+.pic {
+  background: url(../../assets/img/الرسالة.jpg);
+  width: 150px;
+  height: 150px;
+  margin: -25px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.remove-shadow {
+  box-shadow: unset;
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  border-radius: 20%;
+  border: 1px solid $primary;
+  img {
+    position: absolute;
+    object-fit: cover;
+    top: -21%;
+    left: -21%;
+    width: 140%;
+    height: 140%;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    border: 1px solid gray;
+  }
+}
+
+.values{
+  transform: rotate(45deg)!important;
+}

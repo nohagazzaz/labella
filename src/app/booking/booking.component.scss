@@ -1,0 +1,90 @@
+@import "variables";
+.diamond {
+  transform: rotate(45deg);
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding {
+  padding-top: 20px;
+}
+
+.primary-header-line {
+  width: fit-content;
+  border: 2px solid white;
+  padding: 1rem 1.8rem 1rem 1.8rem;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.534);
+}
+
+.contact-form .form-control {
+  border-radius: 0rem;
+  background: transparent !important;
+  color: $secondary;
+  border: 2px solid $secondary;
+  &::placeholder {
+    color: $secondary;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($secondary, 0.25);
+  }
+}
+
+.contact-image {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon {
+  border-radius: 6rem;
+  background: white;
+  border: #fff;
+  padding: 15px;
+  width: fit-content;
+  text-align: center;
+  margin-top: -25px;
+}
+
+fa-icon.ng-fa-icon {
+  color: $secondary;
+}
+
+.contact-form form {
+  padding: 10px;
+}
+
+.contact-form .btnContact {
+  border-radius: 10px !important;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+.text-area {
+  border-radius: 10px !important;
+}
+
+.date-remove-button{
+  background: none;
+  border: none;
+
+}
+
+.booking-form-box{
+  select{
+    background: url('../../assets/img/25623.svg') left .75rem center/8px 10px no-repeat #fff;
+    border: 2px solid grey;
+    border-radius: 10px;
+  }
+}
+.input{
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.owl-dt-timer, .owl-dt-popup-container {
+  direction: initial !important;
+}

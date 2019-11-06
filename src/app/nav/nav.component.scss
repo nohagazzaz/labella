@@ -1,0 +1,67 @@
+@import "variables";
+
+
+.cursor-link {
+    color: white!important;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: opacity 0.2s ease-in-out 0s;
+    -moz-transition: opacity 0.2s ease-in-out 0s;
+    transition: opacity 0.2s ease-in-out 0s;
+}
+
+.cursor-link:hover {
+    opacity: 1;
+}
+
+.cursor-link:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 85%;
+    height: 2px;
+    z-index: 10;
+    background-color: white;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.cursor-link:hover:after {
+    content: "";
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.navbar-background {
+    background: #c28b36;
+    border-radius: 10px;
+    margin-right: -50px;
+    margin-top: 52px;
+    @media screen and(max-width:900px){
+        background: #c28b36;
+        border-radius: 10px;
+        margin-right: 0px;
+        margin-top: 0px;
+        justify-content: left;
+        width: fit-content;
+    }
+}
+
+.logo{
+    height: 145px;
+    margin-top: -16px;
+}
+
+.home{
+    border-left: 1px solid white;
+    padding-left: 10px;
+}
+
+.padding{
+padding-right: 10px;
+}

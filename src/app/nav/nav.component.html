@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" (click)="triggerScrollTo('page-top')">
+      <span class="d-block d-lg-none">La Bella | </span>
+      <span class="d-none d-lg-block mx-3">
+        <img class="img-fluid mx-auto logo" src="../../assets/img/logo_labela.png" alt="Responsive image">
+      </span>
+    </a>
+    <button (click)="Show()" class="navbar-toggler navbar-toggler-left collapsed button" type="button"
+      data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span> </span>
+      <span> </span>
+      <span> </span>
+    </button>
+    <div class="collapse navbar-collapse p-2 m-b-45 navbar-background" [ngClass]="{'show': show_class, 'hide': !show_class}"
+      id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item home padding">
+          <a class="nav-link cursor-link js-scroll-trigger" (click)="triggerScrollTo('about')" translate>About
+            us</a>
+        </li>
+
+        <li class="nav-item home padding">
+          <a class="nav-link cursor-link js-scroll-trigger" (click)="triggerScrollTo('pictures')" translate>pictures</a>
+        </li>
+
+        <li class="nav-item home padding">
+          <a class="nav-link cursor-link js-scroll-trigger" (click)="triggerScrollTo('contact')" translate>contact
+            us</a>
+        </li>
+
+        <li class="nav-item home padding">
+          <a class="nav-link cursor-link js-scroll-trigger" (click)="triggerScrollTo('book')" translate>book</a>
+        </li>
+
+
+        <li class="nav-item home padding">
+          <a class="nav-link cursor-link js-scroll-trigger" (click)="triggerScrollTo('services')" translate>Our
+            services</a>
+        </li>
+
+        <li class="nav-item home padding">
+          <a class="nav-link cursor-link js-scroll-trigger" (click)="triggerScrollTo('medical')" translate>medical</a>
+        </li>
+        <li class="nav-item home padding">
+          <a class="nav-link cursor-link js-scroll-trigger" (click)="triggerScrollTo('doctors')" translate>doctors</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

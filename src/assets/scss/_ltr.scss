@@ -1,0 +1,16 @@
+/*** LTR websites ***/
+
+$direction :ltr;
+$opposite-direction :rtl;
+$start-direction :left;
+$end-direction :right;
+$transform-direction :1;
+$font-family: 'Helvetica';
+$opposite-font-family: 'DroidKufi-Regular';
+.ltr {
+    font-family: $font-family, serif;
+    font-weight: normal;
+    font-style: normal;
+    direction: $direction;
+    @import "main";
+}

@@ -1,0 +1,160 @@
+<div class="row justify-content-center padding">
+  <h4 class="mb-4 primary-header-line">
+    <i class="fas fa-square-full diamond"></i>
+    <span class="text-center" translate>book</span>
+    <i class="fas fa-square-full diamond"></i>
+  </h4>
+</div>
+
+<div class="container-fluid body booking-form-box">
+  <div class="container contact-form">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <input type="hidden" name="form-name" value="booking" />
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="form-group">
+            <input type="text" name="firstName" class="form-control text-area" formControlName="firstName"
+              [placeholder]="'firstName' | translate" />
+            <span class="text-danger small" *ngIf="(form.firstName.dirty || form.firstName.touched) &&
+              form.firstName.invalid &&
+              form.firstName.errors['required']" translate>
+              First Name is required
+            </span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="lastName" class="form-control text-area" formControlName="lastName"
+              [placeholder]="'lastName' | translate" />
+            <span class="text-danger small" *ngIf="(form.lastName.dirty || form.lastName.touched) &&
+              form.lastName.invalid &&
+              form.lastName.errors['required']" translate>
+              Last Name is required
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="txtEmail" class="form-control text-area" formControlName="Email"
+              [placeholder]="'Email' | translate" />
+            <span class="text-danger small" *ngIf="(form.Email.dirty || form.Email.touched) &&
+              form.Email.invalid &&
+              form.Email.errors['required']" translate>
+              Email is required
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label class="col-md-2" for="procedure" translate>sex</label>
+            <select name="sex" id="sex" class="browser-default custom-select col-md-10" formControlName="sex">
+              <option value="male" translate="Male"></option>
+              <option value="female" translate="Female"></option>
+            </select>
+            <span class="text-danger small" *ngIf="(form.sex.dirty || form.sex.touched) &&
+            form.sex.invalid &&
+            form.sex.errors['required']" translate>
+              Sex is required
+            </span>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="form-group">
+            <input type="text" name="txtPhone" class="form-control text-area" formControlName="Mobile"
+              [placeholder]="'Mobile' | translate" />
+            <span class="text-danger small" *ngIf="(form.Mobile.dirty || form.Mobile.touched) &&
+              form.Mobile.invalid &&
+              form.Mobile.errors['required']" translate>
+              Mobile is required
+            </span>
+            <span class="text-danger small" *ngIf="(form.Mobile.dirty || form.Mobile.touched) &&
+              form.Mobile.invalid &&
+              form.Mobile.errors['invalidNumber']" translate>
+              Mobile is not correct
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="form-group row">
+            <label class="col-md-2" for="procedure" translate>procedure</label>
+            <select name="procedure" id="procedure" class="browser-default custom-select col-md-10"
+              formControlName="procedure" placeholder="'procedure' | translate">
+              <option *ngFor="let procedure of procedureSelect" [value]="procedure.value">{{procedure.label}}</option>
+            </select>
+
+            <span class="text-danger small" *ngIf="(form.procedure.dirty || form.procedure.touched) &&
+              form.procedure.invalid &&
+              form.procedure.errors['required']" translate>
+              Procedure is required
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label class="col-md-4" for="doctor" translate>choice-doctor</label>
+            <select name="doctor" id="doctor" class="browser-default custom-select col-md-8" formControlName="doctor"
+              placeholder="'choice-doctor' | translate">
+              <option *ngFor="let doctor of list_doctors" [value]="doctor">{{doctor}}</option>
+            </select>
+            <span class="text-danger small" *ngIf="(form.doctor.dirty || form.doctor.touched) &&
+          form.doctor.invalid &&
+          form.doctor.errors['required']" translate>
+              Doctor is required
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="form-group row">
+
+            <input class="input col-md-12" [owlDateTime]="dt1" [owlDateTimeTrigger]="dt1" [min]="min"
+              formControlName="dateAndTime" [placeholder]="'date and time' | translate">
+            <owl-date-time class="date-and-time" #dt1></owl-date-time>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <textarea name="comment" class="form-control text-area" formControlName="comment"
+              [placeholder]="'comment' | translate" style="width: 100%; height: 150px;"></textarea>
+
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-content-center mt-5">
+        <div class="form-group">
+          <button type="submit" [disabled]="!contactForm.valid" name="btnSubmit" class="btn btn-outline-dark btnContact"
+            translate>Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

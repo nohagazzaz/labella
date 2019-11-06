@@ -1,0 +1,27 @@
+.diamond {
+  transform: rotate(45deg);
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding {
+  padding-top: 20px;
+}
+.gray-background {
+  background-color: #f7f7f7;
+}
+
+.doctor-image {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+p {
+  color: black;
+}
+.doctor-container {
+  text-align: center;
+}

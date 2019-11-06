@@ -1,0 +1,187 @@
+.gray-background {
+  background-color: #f7f7f7;
+  box-shadow: 1px;
+}
+
+.fix-margin {
+  margin: -65px;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.diamond {
+  transform: rotate(45deg);
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding {
+  padding-top: 20px;
+}
+.remove-shadow {
+  box-shadow: unset;
+}
+
+.line {
+  border-left: 1px solid black;
+}
+.scar {
+  height: 90px;
+  margin-top: 10px;
+}
+
+.lips {
+  height: 145px;
+}
+
+@media (min-width: 768px) {
+  .col-md-7 {
+    margin-top: 25px;
+  }
+}
+
+
+.plasma {
+  height: 120px;
+  margin-top: 55px;
+}
+.plasma-text{
+  margin-top: 55px;
+}
+
+.meso-text {
+  margin-top: 35px;
+}
+
+.facelift {
+  height: 322px;
+  margin: -73px;
+  margin-top: -41px;
+}
+
+.facelift-text {
+  margin-top: 93px;
+}
+
+.laser {
+  height: 107px;
+  margin-top: 36px;
+}
+.laser-text {
+  margin-top: 73px;
+}
+
+.acni {
+  margin-top: 55px;
+  margin-right: 14px;
+  height: 93px;
+}
+
+.peel {
+  height: 105px;
+  margin-top: 10px;
+}
+
+.chem {
+  height: 275px;
+  margin: -46px;
+  margin-top: -31px;
+}
+.chem-text {
+  margin-top: 68px;
+}
+
+.hairlaser {
+  height: 225px;
+  margin: -31px;
+}
+
+.hairlaser-text {
+  margin-top: 55px;
+}
+
+.growth {
+  height: 230px;
+  margin: -31px;
+  margin-top: -39px;
+}
+
+.growth-text {
+  margin-top: 43px;
+}
+
+@media screen and(max-width:1000px) {
+  .container-fluid{
+    text-align: center;
+  }
+  .scar {
+    height: 50px;
+  }
+  .lips {
+    height: 90px;
+  }
+
+  .plasma {
+    height: 80px;
+  }
+  .facelift {
+    height: 200px;
+    margin-top: 0px;
+  }
+  .facelift-text {
+    margin-top: 60px;
+  }
+  .laser {
+    height: 60px;
+  }
+  .acni {
+    height: 60px;
+    margin-right: 0px;
+  }
+  .peel {
+    height: 60px;
+  }
+
+  .chem {
+    height: 150px;
+  }
+  .hairlaser {
+    height: 150px;
+  }
+  .growth {
+    height: 130px;
+  }
+  .container p {
+    font-size: 12px;
+  }
+  .container h5 {
+    font-size: 16px;
+  }
+
+  .skin-margin {
+    margin-top: 50px;
+  }
+  .lesamed-margin {
+    margin-top: 15px;
+  }
+  .exfo-margin {
+    margin-top: 55px;
+  }
+
+  .injection-margin {
+    margin-top: 45px;
+  }
+  .injection-img {
+    height: 170px;
+  }
+  .container {
+    text-align: center;
+  }
+  .line {
+    border-left: none;
+  }
+}
+

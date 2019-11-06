@@ -1,0 +1,56 @@
+.phone {
+  margin-top: 86px;
+}
+
+h4,
+h5,
+h6 {
+  color: #c48330;
+}
+
+.phone-text {
+  margin-top: 150px;
+}
+
+.phone-number {
+  margin-top: 194px;
+  margin-right: -102px;
+}
+
+.time {
+  margin-right: -72px;
+}
+
+.box {
+  @media screen and (max-width: 900px) {
+    display: flex;
+  }
+}
+
+.social-media {
+  margin-top: -95px;
+  margin-right: 330px;
+}
+.img-size {
+  height: 30px;
+}
+
+@media screen and(max-width:1000px) {
+  .social-media {
+    margin-right: 0px;
+    margin-top: -45px;
+  }
+  .social-media img {
+    height: 85px;
+  }
+
+  h4,
+  h5,
+  p {
+    font-size: 12px;
+  }
+
+  .contact-content {
+    justify-content: center;
+  }
+}

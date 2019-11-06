@@ -1,0 +1,45 @@
+.gray-background {
+  background-color: #f7f7f7;
+  box-shadow: 1px;
+}
+
+.fix-margin {
+  margin: -65px;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+.diamond {
+  transform: rotate(45deg);
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding {
+  padding-top: 20px;
+}
+.remove-shadow {
+  box-shadow: unset;
+}
+
+.medic-images {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  @media screen and(max-width:900px) {
+    margin-bottom: 10px;
+    transform: none;
+  }
+}
+
+.device-name{
+  color: #c28b36;
+}

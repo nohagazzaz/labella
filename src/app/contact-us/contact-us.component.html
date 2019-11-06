@@ -1,0 +1,65 @@
+<div class="row justify-content-center padding">
+  <h4 class="mb-4 primary-header-line">
+    <i class="fas fa-square-full diamond"></i>
+    <span class="text-center" translate>contact
+      us</span>
+    <i class="fas fa-square-full diamond"></i>
+  </h4>
+</div>
+<div class="container-fluid body">
+  <div class="container contact-form">
+    <form name="contact-us" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <input type="hidden" name="form-name" value="contact" />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="txtName" class="form-control text-area" formControlName="Name"
+              [placeholder]="'Name' | translate" />
+            <span class="text-danger small" *ngIf="(Name.dirty || Name.touched) && Name.invalid &&
+              Name.errors['required']" translate>
+              Name is required
+            </span>
+          </div>
+          <div class="form-group">
+            <input type="text" name="txtEmail" class="form-control text-area" formControlName="Email"
+              [placeholder]="'Email' | translate" />
+            <span class="text-danger small" *ngIf="(Email.dirty || Email.touched) && Email.invalid &&
+              Email.errors['required']" translate>
+              Email is required
+            </span>
+          </div>
+          <div class="form-group">
+            <input type="text" name="txtPhone" class="form-control text-area" formControlName="Mobile"
+              [placeholder]="'Mobile' | translate" />
+            <span class="text-danger small" *ngIf="(Mobile.dirty || Mobile.touched) && Mobile.invalid &&
+              Mobile.errors['required']" translate>
+              Mobile is required
+            </span>
+            <span class="text-danger small" *ngIf="(Mobile.dirty || Mobile.touched) && Mobile.invalid &&
+              Mobile.errors['invalidNumber']" translate>
+              Mobile is not correct
+            </span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <textarea name="txtMsg" class="form-control text-area" formControlName="Message"
+              [placeholder]="'message' | translate" style="width: 100%; height: 150px;"></textarea>
+            <span class="text-danger small" *ngIf="(Message.dirty || Message.touched) && Message.invalid &&
+              Message.errors['required']" translate>
+              Message is required
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-content-center mt-5">
+        <div class="form-group">
+          <button type="submit" [disabled]="!contactForm.valid" name="btnSubmit" class="btn btn-outline-dark btnContact"
+            translate>Send</button>
+        </div>
+      </div>
+    </form>
+
+
+  </div>
+</div>
